@@ -11,7 +11,6 @@ class PricesCalculator
   include Pricing
   attr_reader :practitioners, :communications
 
-
   def initialize(filename)
     @practitioners = Hash.new
     @communications = Array.new
