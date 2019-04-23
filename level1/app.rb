@@ -1,15 +1,11 @@
 require "json"
 
-# *********************************************
-
 module Pricing
   COMMUNICATION = 0.10
   COLORMODE = 0.18
   PAGESUP = 0.07
   EXPRESSDELIVERY = 0.60
 end
-
-# *********************************************
 
 class PricesCalculator
   include Pricing
@@ -60,7 +56,6 @@ class PricesCalculator
     if practitioner.express_delivery
       price += Pricing::EXPRESSDELIVERY
     end
-
     price.round(2)
   end
 end
