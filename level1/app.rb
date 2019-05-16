@@ -39,7 +39,7 @@ class PricesCalculator
     output.to_json
   end
 
-  private
+  private #need to be removed to pass its Rspec test
 
   def total_single_communication(communication)
     price = Pricing::COMMUNICATION
