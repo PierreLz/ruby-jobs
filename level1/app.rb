@@ -39,7 +39,7 @@ class PricesCalculator
     output.to_json
   end
 
-  private #need to be removed to pass its Rspec test
+  private #need to be removed to pass Rspec test
 
   def total_single_communication(communication)
     price = Pricing::COMMUNICATION
@@ -91,7 +91,7 @@ end
 price_calculator = PricesCalculator.new("data.json")
 price_calculator.outputs_turnover_by_dates
 
-out_file = File.new("/home/pierre/code/PierreLz/honestica/ruby-jobs/level1/out.txt", "w")
+out_file = File.new("/home/pierre/code/PierreLz/honestica/ruby-jobs/level1/output_from_app.json", "w")
 out_file.puts(price_calculator.outputs_turnover_by_dates)
 out_file.close
 
